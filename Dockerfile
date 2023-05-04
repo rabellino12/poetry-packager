@@ -6,4 +6,4 @@ RUN apk upgrade --update && apk add --no-cache curl python3 python3-dev gcc gfor
 RUN ln -sf python3 /usr/bin/python
 RUN python3 -m ensurepip
 RUN pip3 install --no-cache --upgrade pip setuptools awscli
-RUN curl https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+RUN curl -sSL https://install.python-poetry.org | python3 -
